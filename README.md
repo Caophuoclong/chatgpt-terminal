@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
     ```sh
-    git clone https://github.com/kamillobinski/chatgpt-terminal.git
+    git clone https://github.com/Caophuoclong/chatgpt-terminal
     ```
 
 2. Create a .env file in the root directory of the project
@@ -84,7 +84,7 @@ To get a local copy up and running follow these simple steps.
 3. Add the required environment variables to the .env file - follow this [guide](./docs/auth.md)
 
     ```sh
-    AI_SESSION_TOKEN=session_token_value
+    API_KEY=session_token_value
     ```
     
 
