@@ -33,7 +33,6 @@ class Terminal:
 
     def wait(self):
         self.done = False
-
         def animate():
             for c in itertools.cycle(['⢿', '⣻', '⣽', '⣾', '⣷', '⣯', '⣟', '⡿']):
                 if self.done:
