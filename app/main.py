@@ -22,18 +22,17 @@ def main():
         response = ai.ask(message)
         terminal.stop_wait()
         terminal.display_response(response.message)
-        options = ["yes", "no"]
-        user_input = ''
-        input_message = "Would you like continue?\n"
-        for index, item in enumerate(options):
-            input_message += f'{index+1}) {item}\n'
-        input_message += 'Your choice: '
-        while user_input.lower() not in options:
-            user_input = input(input_message)
-            print(user_input)
-        if user_input.lower() == options[0].lower():
-            while True:
-                message = terminal.get_user_message()
+        # options = ["yes", "no"]
+        # user_input = ''
+        # input_message = "Would you like continue?\n"
+        # for index, item in enumerate(options):
+        #     input_message += f'{index+1}) {item}\n'
+        # input_message += 'Your choice: '
+        # user_input = input(input_message)
+        # if user_input.lower() in exit_commands:
+        #     return 
+        while True:
+                message = terminal.get_user_message() 
                 if message in exit_commands:
                     break
                 terminal.wait()
@@ -41,14 +40,8 @@ def main():
                 terminal.stop_wait()
                 terminal.display_response(response.message)
                 print("Type `exit` to quit this conversation!")
-        else:
-            return
 
-
-        
             
-            # google_voice.speak(response.message, 'en')
-            # pyttsx3_voice.speak(response.message)
     except OSError as e:
         pass
 

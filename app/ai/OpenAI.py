@@ -37,5 +37,3 @@ class Response():
         # self.conversation_id = response['conversation_id']
         # self.parent_id = response['parent_id']
 
-x = OpenAI()
-x.ask("do u know typescript")
